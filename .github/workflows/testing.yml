@@ -27,8 +27,8 @@ jobs:
     if: ${{ contains(github.event.commits.*.message, '#')}}
     runs-on: ubuntu-latest
     steps:
-      - name : print
-        run : echo "contains #"
+      - name: print
+        run: echo "contains #"
   
         
  
