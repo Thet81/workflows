@@ -24,7 +24,7 @@ jobs:
         run: echo "$COMMIT_MESSAGES"
 
   message_check:
-    if: ${{ contains(github.event.commits.*.message, '#')}}
+    if:  contains(github.event.commits.*.message, '#')
     runs-on: ubuntu-latest
     steps:
       - name: print
